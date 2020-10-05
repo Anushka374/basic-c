@@ -1,10 +1,12 @@
+//Documentation section
 #include<stdio.h>
+                               //main function
 void main()
 {
         
     int a, b, c,large;
 
-    printf("Enter a: ");
+    printf("Enter a: ");              //Gathering data
     scanf("%d", &a);
 
     printf("Enter b: ");
@@ -12,9 +14,10 @@ void main()
 
     printf("Enter c: ");
     scanf("%d", &c);
-     large= a>b?(a>c?a:c):(b>c?b:c);
+     large= a>b?(a>c?a:c):(b>c?b:c);             //ternary operator used
      printf("The largest of three numbers is",large);
-    return 0;
+ 
+ return 0;                  //return function
 }
 
     
