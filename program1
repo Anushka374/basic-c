@@ -2,7 +2,7 @@
 void main()
 {
         
-    int a, b, c;
+    int a, b, c,large;
 
     printf("Enter a: ");
     scanf("%d", &a);
@@ -12,31 +12,10 @@ void main()
 
     printf("Enter c: ");
     scanf("%d", &c);
-
-    if(a > b)
-    {
-        if(a > c)
-        {
-            printf("a is largest.");
-        }
-        else
-        {
-            printf("c is largest.");
-        }
-    }
-    else
-    {
-        if(b > c)
-        {
-        printf("b is largest.");
-        }
-        else
-        {
-            printf("c is largest.");
-        }
-    }
-
+     large= a>b?(a>c?a:c):(b>c?b:c);
+     printf("The largest of three numbers is",large);
     return 0;
 }
 
+    
 
